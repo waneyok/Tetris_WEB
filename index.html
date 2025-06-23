@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мультиплатформенный Тетрис</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Универсальный Тетрис</h1>
+    
+    <div class="game-container">
+        <div class="game-board">
+            <div class="grid" id="grid"></div>
+            <div class="game-over" id="gameOver">
+                <h1>Конец игры!</h1>
+                <button class="btn" id="restartBtn">Играть снова</button>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="next-piece" id="nextPiece"></div>
+            
+            <div class="score-board">
+                <h2>Очки</h2>
+                <p id="score">0</p>
+                <h2>Уровень</h2>
+                <p id="level">1</p>
+                <h2>Линии</h2>
+                <p id="lines">0</p>
+            </div>
+            
+            <div class="controls">
+                <h2>Управление</h2>
+                <p>← → : Движение</p>
+                <p>↑ : Поворот</p>
+                <p>↓ : Быстрое падение</p>
+                <p>Пробел : Мгновенное падение</p>
+                <p>P : Пауза</p>
+                <button class="btn" id="startBtn">Начать игру</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mobile-controls" id="mobileControls">
+        <button class="mobile-btn mobile-btn-drop" id="mobileDrop">DROP</button>
+        <button class="mobile-btn mobile-btn-rotate" id="mobileRotate">↻</button>
+        <button class="mobile-btn mobile-btn-left" id="mobileLeft">←</button>
+        <button class="mobile-btn mobile-btn-down" id="mobileDown">↓</button>
+        <button class="mobile-btn mobile-btn-right" id="mobileRight">→</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
